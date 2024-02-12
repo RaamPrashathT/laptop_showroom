@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background-color:#2b2156;
+}
+
+header img{
+    height: 50px;
+    width: 220px;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ef3459;
+    
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar{
+    margin-right:20px ;
+    
+    font-family: 'Poppins', sans-serif;
+}
+
+ul li{
+    display: inline-block;
+    margin: 10PX;
+
+}
+
+ul li a{
+    color: black;
+}
+
+ul li a:hover{
+    text-decoration: underline;
+}
+
+.home{
+    width: 100%;
+    height: 93vh;
+    background-image: url("BACK1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+.heading1{
+    color: #ef3459;
+    font-size: 52px;
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    top: 100px;
+    margin-left: 20px;
+}
+
+.body1{
+    color: white;
+    font-size: larger;
+    width: 40%;
+    position: absolute;
+    top: 200px;
+    margin-left: 20px;
+}
+/* contact and about */
+.contact-section {
+    width: 80%;
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #45a049;
+}
+
+.about-section {
+    
+    font-family: 'Poppins', sans-serif;
+    width: 80%;
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .social-links {
+    margin-top: 20px;
+  }
+
+  .social-links a {
+    text-decoration: none;
+    margin-right: 15px;
+    color: #333;
+    font-size: 24px;
+  }
+
+.social-links a:hover {
+    color: #007bff;
+}
+
+
+/* latest */
+.product-row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-image: url("back2.jpeg");
+    background-position: bottom;
+    height: 50vh;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+}
+
+.product-card {
+    width: 200px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 15px;
+    text-align: center;
+}
+
+.product-image {
+    max-width: 100%;
+    height: 200px;
+    border-radius: 4px;
+}
+
+.product-name {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.product-price {
+    margin-top: 8px;
+    color: #007bff;
+    font-size: 16px;
+}
+/* shop */
+
+.shop {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 50vh;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* marque */
+.marquee-container {
+    white-space: nowrap;
+    width: 100%;
+    background-color: #ef3459;
+    font-family: 'Sixtyfour', sans-serif;
+}
+
+.marquee-content {
+    display: inline-block;
+    animation: marqueeAnimation 10s linear infinite;
+}
+
+@keyframes marqueeAnimation {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+.marquee-text {
+    font-size: 18px;
+    font-weight: bold;
+    color: #007bff;
+    padding: 10px;
+    margin: 0;
+}
+
+.shopheading{
+    
+    text-align: center;
+    height: 100px;
+    border: #fff solid 2px;
+}
+
+.shopheadingp{
+    color: white;
+    font-family: 'Sixtyfour', sans-serif;
+    font-size: 50px;
+    margin-top: 20px;
+}
